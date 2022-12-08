@@ -56,7 +56,21 @@ print(city)
 # методы класса для ввода данных, вывода данных, реа-
 # лизуйте доступ к отдельным полям через методы класса.
 
-
+class Country:
+    def __init__(self, country, contit, phone_code_of_the_country, names_of_citys):
+      self.country = country
+      self.contit = contit
+      self.num_of_people = randint(1E6, 1E9)
+      self.phone_code_of_the_country = phone_code_of_the_country
+      self.names_of_citys = names_of_citys
+    def __str__(self):
+        return (f'Country: {self.country} \n'
+                f'Contit: {self.contit} \n'
+                f'Num of people: {self.num_of_people} \n'
+                f'Phone code of the city: {self.phone_code_of_the_country} \n'
+                f'Names of citys: {self.names_of_citys} \n')
+country = Country("Ukraine","Eurasia", "2345", "*")   
+print(country) 
 
 # Задание 4
 # Создайте класс «Дробь». Необходимо хранить в полях 

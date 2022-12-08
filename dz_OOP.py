@@ -31,8 +31,23 @@ print(me)
 # для ввода данных, вывода данных, реализуйте доступ к 
 # отдельным полям через методы класса.
 
+from random import *
+class City:
+    def __init__(self, city, country, postal_code_of_the_city, phone_code_of_the_city):
+      self.city = city
+      self.country = country
+      self.num_of_people = randint(1E6, 1E9)
+      self.postal_code_of_the_city = postal_code_of_the_city
+      self.phone_code_of_the_city = phone_code_of_the_city
+    def __str__(self):
+        return (f'City: {self.city} \n'
+                f'Country: {self.country} \n'
+                f'Num of people: {self.num_of_people} \n'
+                f'Postal code of the city: {self.postal_code_of_the_city} \n'
+                f'Phone code of the city: {self.phone_code_of_the_city} \n')
+city = City("Dnipro", "Ukraine", "2345", "5479746526")   
+print(city) 
 
- 
 # Задание 3
 # Создайте  класс  «Страна».  Необходимо  хранить  в  
 # полях класса: название страны, название континента, 

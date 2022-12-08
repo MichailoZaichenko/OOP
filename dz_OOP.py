@@ -79,6 +79,7 @@ print(country)
 # отдельным полям через методы класса. Также создайте 
 # методы класса для выполнения арифметических опера-
 # ций (сложение, вычитание, умножение, деление, и т.д.)
+from math import sqrt
 class Part:
     def __init__(self, numerator, denominator):
         self.numerator = numerator
@@ -91,9 +92,12 @@ class Part:
             return f"Summation: {self.numerator}+{self.denominator} eqels: {self.numerator + self.denominator}"
     def Subtraction(self):
             return f"Subtraction: {self.numerator}-{self.denominator} eqels: {self.numerator - self.denominator}"
+    def Radical(self):
+        return f"Radical: √{self.numerator} and √{self.denominator} eqels: {sqrt(self.numerator)} and {sqrt(self.denominator)}"
         
-eqel = Part(4543535, 425)
+eqel = Part(454, 400)
 print(eqel.Division())
 print(eqel.Multiplication())
 print(eqel.Summation())
 print(eqel.Subtraction())
+print(eqel.Radical())

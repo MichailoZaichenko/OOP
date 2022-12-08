@@ -78,5 +78,12 @@ print(country)
 # для ввода данных, вывода данных, реализуйте доступ к 
 # отдельным полям через методы класса. Также создайте 
 # методы класса для выполнения арифметических опера-
-# ций (сложение, вычитание, умножение, деление, и т.д.).Практическое задание
-
+# ций (сложение, вычитание, умножение, деление, и т.д.)
+class Part:
+    def __init__(self, numerator, denominator):
+        self.numerator = numerator
+        self.denominator = denominator
+        self.eqel = numerator / denominator
+        
+division = Part(4543535, 425)
+print(division.eqel)

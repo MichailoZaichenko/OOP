@@ -83,7 +83,8 @@ class Part:
     def __init__(self, numerator, denominator):
         self.numerator = numerator
         self.denominator = denominator
-        self.eqel = numerator / denominator
+        self.eqel =f"Division: {numerator}/{denominator} eqels: {numerator / denominator}"
+        
         
 division = Part(4543535, 425)
 print(division.eqel)

@@ -83,8 +83,17 @@ class Part:
     def __init__(self, numerator, denominator):
         self.numerator = numerator
         self.denominator = denominator
-        self.eqel =f"Division: {numerator}/{denominator} eqels: {numerator / denominator}"
+    def Division(self):
+            return f"Division: {self.numerator}/{self.denominator} eqels: {self.numerator / self.denominator}"
+    def Multiplication(self):
+            return f"Multiplication: {self.numerator}*{self.denominator} eqels: {self.numerator * self.denominator}"
+    def Summation(self):
+            return f"Summation: {self.numerator}+{self.denominator} eqels: {self.numerator + self.denominator}"
+    def Subtraction(self):
+            return f"Subtraction: {self.numerator}-{self.denominator} eqels: {self.numerator - self.denominator}"
         
-        
-division = Part(4543535, 425)
-print(division.eqel)
+eqel = Part(4543535, 425)
+print(eqel.Division())
+print(eqel.Multiplication())
+print(eqel.Summation())
+print(eqel.Subtraction())
